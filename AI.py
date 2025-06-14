@@ -9,6 +9,9 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 
 load_dotenv()
 
+api_key = os.getenv("OPENAI_API_KEY")
+print("API Key Loaded:", api_key is not None)
+
 st.set_page_config(page_title="AI STEM Tutor", layout="centered")
 st.title(" AI Tutor for STEM Subjects")
 st.markdown("Powered by Agentic AI, RAG, and Granite Principles")
